@@ -37,9 +37,9 @@ function checkForWin () {
       return
     } else if (check.isMine == false && check.isHidden == true) {
       return
-    }
+    } 
   }
-  lib.displayMessage('You win!');  
+  lib.displayMessage('You win!')
 }
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
