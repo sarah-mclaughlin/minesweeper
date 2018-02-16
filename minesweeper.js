@@ -55,12 +55,14 @@ function checkForWin () {
 // them, counting the number of times `cell.isMine` is true.
 function countSurroundingMines (cell) {
   var surrounding = lib.getSurroundingCells(cell.row, cell.col);
-  for (var i = 0; i < board.cells.length; i++) {    
-    var count; 
-    if (cell.isMine[i] == true) {
-        return count++;
+  var count = 0;
+  for (var i = 0; i < surrounding.length; i++) {    
+    if (surrounding[i].isMine === true) {
+        count++;
       } 
-    return(count);
+  
   }
+  // return the count of surrouding mines back to the line 22 function call in startGame function
+  return count;
 }
 
