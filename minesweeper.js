@@ -34,11 +34,11 @@ function checkForWin () {
     var check = board.cells[i];
     if (check.isMine == true && check.isMarked == false) {
       return
-    } else if (check.isMine == false && check.isHidden == true) {
+    } else if (check.isMine == false && check.hidden == true) {
       return
     } 
   }
-  lib.displayMessage('You win!')
+  lib.displayMessage('You win!');
 }
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
